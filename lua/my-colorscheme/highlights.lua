@@ -450,6 +450,10 @@ function M.setup(colors, opts)
     hl("NvimTreeGitMerge", { fg = p.orange })
     hl("NvimTreeGitRenamed", { fg = p.purple })
     hl("NvimTreeGitIgnored", { fg = c.comment })
+    hl("NvimTreeVertSplit", { fg = c.bg, bg = c.bg })
+    hl("NvimTreeOpenedFile", { fg = p.cyan, italic = true })
+    hl("NvimTreeModifiedFile", { fg = c.git_change })
+    hl("NvimTreeWindowPicker", { fg = c.bg, bg = p.blue, bold = true })
 
     -- Trouble
     hl("TroubleNormal", { fg = c.fg, bg = bg_sidebar })
@@ -510,6 +514,76 @@ function M.setup(colors, opts)
     hl("RenderMarkdownH2Bg", { bg = c.bg_highlight })
     hl("RenderMarkdownH3Bg", { bg = c.bg_highlight })
     hl("RenderMarkdownCode", { bg = c.bg_dark })
+
+    -- Markdown (vim-markdown, mkd)
+    hl("mkdLink", { fg = p.blue, underline = true })
+    hl("mkdLineBreak", {})
+    hl("mkdHeading", { fg = c.fg })
+    hl("mkdInlineURL", { fg = p.blue, underline = true })
+    hl("mkdEscape", { fg = c.delimiter })
+    hl("markdownUrl", { fg = p.blue, underline = true })
+    hl("markdownCode", { fg = p.orange })
+    hl("markdownCodeBlock", { fg = p.green })
+    hl("markdownLinkTextDelimiter", { fg = c.delimiter })
+    hl("markdownLinkDelimiter", { fg = c.delimiter })
+    hl("markdownIdDelimiter", { fg = c.delimiter })
+    hl("markdownLinkText", { fg = p.cyan })
+    hl("markdownItalic", { italic = true })
+    hl("markdownBold", { bold = true })
+    hl("markdownBoldItalic", { bold = true, italic = true })
+
+    -- HTML
+    hl("htmlH1", { fg = p.blue, bold = true })
+    hl("htmlH2", { fg = p.blue, bold = true })
+    hl("htmlH3", { fg = p.blue, bold = true })
+    hl("htmlH4", { fg = p.blue, bold = true })
+    hl("htmlH5", { fg = p.blue, bold = true })
+    hl("htmlH6", { fg = p.blue, bold = true })
+    hl("htmlTag", { fg = c.delimiter })
+    hl("htmlEndTag", { fg = c.delimiter })
+    hl("htmlTagName", { fg = p.red })
+    hl("htmlArg", { fg = p.yellow })
+    hl("htmlSpecialChar", { fg = p.orange })
+
+    -- diffview.nvim
+    hl("DiffviewNormal", { fg = c.fg, bg = bg_sidebar })
+    hl("DiffviewVertSplit", { fg = c.bg, bg = c.bg })
+    hl("DiffviewStatusAdded", { fg = c.git_add })
+    hl("DiffviewStatusModified", { fg = c.git_change })
+    hl("DiffviewStatusRenamed", { fg = c.git_change })
+    hl("DiffviewStatusDeleted", { fg = c.git_delete })
+    hl("DiffviewFilePanelInsertion", { fg = c.git_add })
+    hl("DiffviewFilePanelDeletion", { fg = c.git_delete })
+    hl("DiffviewFilePanelTitle", { fg = p.blue, bold = true })
+    hl("DiffviewFilePanelCounter", { fg = p.magenta })
+    hl("DiffviewFilePanelFileName", { fg = c.fg })
+
+    -- TabLine diagnostics
+    hl("TabLineError", { fg = c.diag_error })
+    hl("TabLineWarning", { fg = c.diag_warn })
+    hl("TabLineHint", { fg = c.diag_hint })
+    hl("TabLineInformation", { fg = c.diag_info })
+
+    -- which-key.nvim
+    hl("WhichKey", { fg = p.cyan })
+    hl("WhichKeyGroup", { fg = p.blue })
+    hl("WhichKeyDesc", { fg = c.fg })
+    hl("WhichKeySeparator", { fg = c.comment })
+    hl("WhichKeyFloat", { bg = bg_float })
+    hl("WhichKeyBorder", { fg = c.border, bg = bg_float })
+    hl("WhichKeyValue", { fg = c.comment })
+
+    -- hop.nvim
+    hl("HopNextKey", { fg = "#ff007c", bold = true })
+    hl("HopNextKey1", { fg = "#00dfff", bold = true })
+    hl("HopNextKey2", { fg = "#2b8db3" })
+    hl("HopUnmatched", { fg = c.comment })
+
+    -- LSP additional
+    hl("LspCodeLensSeparator", { fg = c.comment })
+
+    -- StatusLine additional
+    hl("StatusLineAccent", { fg = c.fg, bg = c.bg_statusline, bold = true })
 end
 
 return M

@@ -27,14 +27,18 @@ vim.cmd([[colorscheme my-colorscheme]])
 
 ## Style Variations
 
-Choose from 4 unique color styles:
+Choose from 8 unique color styles:
 
-| Style    | Description                                   |
-| -------- | --------------------------------------------- |
-| `frost`  | Cyan/Blue emphasis, cool impression (default) |
-| `vivid`  | Higher saturation, stronger contrast          |
-| `sunset` | Orange/Gold accent, warm highlights           |
-| `warm`   | Warm background, blue shifted to purple       |
+| Style      | Description                                      |
+| ---------- | ------------------------------------------------ |
+| `frost`    | Cyan/Blue emphasis, cool impression (default)    |
+| `vivid`    | Higher saturation, stronger contrast             |
+| `sunset`   | Orange/Gold accent, warm highlights              |
+| `warm`     | Warm background, blue shifted to purple          |
+| `pulse`    | Cyberpunk neon pink/cyan aesthetic               |
+| `haze`     | Nordic calm + pastel softness                    |
+| `dusk`     | Japanese twilight with cherry blossom accent     |
+| `deep`     | Balanced colors with purple night accent         |
 
 ### Style Previews
 
@@ -54,12 +58,28 @@ Warm accents (orange, gold) on a slightly warm base.
 
 Cozy warm background with purple-shifted blues.
 
+#### pulse
+
+Cyberpunk aesthetic with neon pink and cyan on deep purple-black background.
+
+#### haze
+
+Nordic calm with pastel softness, like morning mist.
+
+#### dusk
+
+Japanese twilight with cherry blossom pink accents on deep plum background.
+
+#### deep
+
+Balanced colors with purple night accent for focused coding.
+
 ## Configuration
 
 ```lua
 require("my-colorscheme").setup({
     -- Style variation (default: "frost")
-    style = "frost", -- "frost", "vivid", "sunset", "warm"
+    style = "frost", -- frost, vivid, sunset, warm, pulse, haze, dusk, deep
 
     -- Enable transparent background
     transparent = false,

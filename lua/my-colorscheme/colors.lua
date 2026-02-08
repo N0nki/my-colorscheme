@@ -4,7 +4,7 @@
 local M = {}
 
 -- Available styles
-M.styles = { "frost", "vivid", "sunset", "warm" }
+M.styles = { "frost", "vivid", "sunset", "warm", "pulse", "haze", "dusk", "deep" }
 
 -- Get palette for specified style
 function M.get_palette(style)
@@ -13,6 +13,10 @@ function M.get_palette(style)
         vivid = "my-colorscheme.palettes.vivid",
         sunset = "my-colorscheme.palettes.sunset",
         warm = "my-colorscheme.palettes.warm",
+        pulse = "my-colorscheme.palettes.pulse",
+        haze = "my-colorscheme.palettes.haze",
+        dusk = "my-colorscheme.palettes.dusk",
+        deep = "my-colorscheme.palettes.deep",
     }
 
     local module_name = palettes[style] or palettes.frost

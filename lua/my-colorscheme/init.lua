@@ -3,7 +3,7 @@
 local M = {}
 
 M.config = {
-    style = "frost", -- "frost", "vivid", "sunset", "warm"
+    style = "frost", -- frost, vivid, sunset, warm, pulse, haze, dusk, deep
     transparent = false,
     commentStyle = { italic = true },
     keywordStyle = { italic = false },
