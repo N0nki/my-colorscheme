@@ -29,16 +29,16 @@ vim.cmd([[colorscheme my-colorscheme]])
 
 Choose from 8 unique color styles:
 
-| Style      | Description                                      |
-| ---------- | ------------------------------------------------ |
-| `frost`    | Cyan/Blue emphasis, cool impression (default)    |
-| `vivid`    | Higher saturation, stronger contrast             |
-| `sunset`   | Orange/Gold accent, warm highlights              |
-| `warm`     | Warm background, blue shifted to purple          |
-| `pulse`    | Cyberpunk neon pink/cyan aesthetic               |
-| `haze`     | Nordic calm + pastel softness                    |
-| `dusk`     | Japanese twilight with cherry blossom accent     |
-| `deep`     | Balanced colors with purple night accent         |
+| Style    | Description                                   |
+| -------- | --------------------------------------------- |
+| `frost`  | Cyan/Blue emphasis, cool impression (default) |
+| `vivid`  | Higher saturation, stronger contrast          |
+| `sunset` | Orange/Gold accent, warm highlights           |
+| `warm`   | Warm background, blue shifted to purple       |
+| `pulse`  | Cyberpunk neon pink/cyan aesthetic            |
+| `haze`   | Nordic calm + pastel softness                 |
+| `dusk`   | Japanese twilight with cherry blossom accent  |
+| `deep`   | Balanced colors with purple night accent      |
 
 ### Style Previews
 
